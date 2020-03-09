@@ -1,0 +1,216 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "元素"
+			}
+		},
+		{
+			"path": "pages/components/components",
+			"style": {
+				"navigationBarTitleText": "组件"
+			}
+		},
+		{
+			"path": "pages/extension/extension",
+			"style": {
+				"navigationBarTitleText": "扩展"
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		}
+	    ,{
+            "path" : "pages/basic/layout/layout",
+            "style" : {
+				"navigationBarTitleText": "布局"
+			}
+        }
+        ,{
+            "path" : "pages/basic/background/background",
+            "style" : {
+				"navigationBarTitleText": "背景"
+			}
+        }
+        ,{
+            "path" : "pages/basic/text/text",
+            "style" : {
+				"navigationBarTitleText": "文字"
+			}
+        }
+        ,{
+            "path" : "pages/basic/icon/icon",
+            "style" : {
+				"navigationBarTitleText": "图标"
+			}
+        }
+        ,{
+            "path" : "pages/basic/button/button",
+            "style" : {
+				"navigationBarTitleText": "按钮"
+			}
+        }
+		,{
+		    "path" : "pages/basic/button/design",
+		    "style" : {
+				"navigationBarTitleText": "按钮/设计"
+			}
+		}
+        ,{
+            "path" : "pages/basic/tag/tag",
+            "style" : {
+				"navigationBarTitleText": "标签"
+			}
+        }
+        ,{
+            "path" : "pages/basic/avatar/avatar",
+            "style" : {
+				"navigationBarTitleText": "头像"
+			}
+        }
+        ,{
+            "path" : "pages/basic/progress/progress",
+            "style" : {
+				"navigationBarTitleText": "进度条"
+			}
+        }
+        ,{
+            "path" : "pages/basic/shadow/shadow",
+            "style" : {
+				"navigationBarTitleText": "边框阴影"
+			}
+        }
+        ,{
+            "path" : "pages/basic/loading/loading",
+            "style" : {
+				"navigationBarTitleText": "加载"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/bar/bar",
+            "style" : {
+				"navigationBarTitleText": "操作条"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/nav/nav",
+            "style" : {
+				"navigationBarTitleText": "导航栏"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/list/list",
+            "style" : {
+				"navigationBarTitleText": "列表"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/card/card",
+            "style" : {
+				"navigationBarTitleText": "卡片"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/form/form",
+            "style" : {
+				"navigationBarTitleText": "表单"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/timeline/timeline",
+            "style" : {
+				"navigationBarTitleText": "时间轴"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/swiper/swiper",
+            "style" : {
+				"navigationBarTitleText": "轮播图"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/modal/modal",
+            "style" : {
+				"navigationBarTitleText": "模态框"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/steps/steps",
+            "style" : {
+				"navigationBarTitleText": "步骤条"
+			}
+        }
+        ,{
+            "path" : "pages/interaction/chat/chat",
+            "style" : {
+				"navigationBarTitleText": "聊天"
+			}
+        }
+        ,{
+            "path" : "pages/plugin/indexes/indexes",
+            "style" : {
+				"navigationBarTitleText": "索引列表"
+			}
+        }
+        ,{
+            "path" : "pages/plugin/animation/animation",
+            "style" : {
+				"navigationBarTitleText": "微动画"
+			}
+        }
+        ,{
+            "path" : "pages/plugin/drawer/drawer",
+            "style" : {
+				"navigationBarTitleText": "全屏抽屉"
+			}
+        }
+        ,{
+            "path" : "pages/plugin/verticalnav/verticalnav",
+            "style" : {
+				"navigationBarTitleText": "垂直导航"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath":"static/icon/index.png",
+			"selectedIconPath":"static/icon/indexA.png",
+			"text": "元素"
+		}, {
+			"pagePath": "pages/components/components",
+			"iconPath":"static/icon/components.png",
+			"selectedIconPath":"static/icon/componentsA.png",
+			"text": "组件"
+		}, {
+			"pagePath": "pages/extension/extension",
+			"iconPath":"static/icon/extention.png",
+			"selectedIconPath":"static/icon/extentionA.png",
+			"text": "扩展"
+		}, {
+			"pagePath": "pages/about/about",
+			"iconPath":"static/icon/about.png",
+			"selectedIconPath":"static/icon/aboutA.png",
+			"text": "关于"
+		}]
+	}
+}

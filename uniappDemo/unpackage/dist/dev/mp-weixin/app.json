@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/components/components",
+    "pages/extension/extension",
+    "pages/about/about",
+    "pages/basic/layout/layout",
+    "pages/basic/background/background",
+    "pages/basic/text/text",
+    "pages/basic/icon/icon",
+    "pages/basic/button/button",
+    "pages/basic/button/design",
+    "pages/basic/tag/tag",
+    "pages/basic/avatar/avatar",
+    "pages/basic/progress/progress",
+    "pages/basic/shadow/shadow",
+    "pages/basic/loading/loading",
+    "pages/interaction/bar/bar",
+    "pages/interaction/nav/nav",
+    "pages/interaction/list/list",
+    "pages/interaction/card/card",
+    "pages/interaction/form/form",
+    "pages/interaction/timeline/timeline",
+    "pages/interaction/swiper/swiper",
+    "pages/interaction/modal/modal",
+    "pages/interaction/steps/steps",
+    "pages/interaction/chat/chat",
+    "pages/plugin/indexes/indexes",
+    "pages/plugin/animation/animation",
+    "pages/plugin/drawer/drawer",
+    "pages/plugin/verticalnav/verticalnav"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/indexA.png",
+        "text": "元素"
+      },
+      {
+        "pagePath": "pages/components/components",
+        "iconPath": "static/icon/components.png",
+        "selectedIconPath": "static/icon/componentsA.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/extension/extension",
+        "iconPath": "static/icon/extention.png",
+        "selectedIconPath": "static/icon/extentionA.png",
+        "text": "扩展"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "static/icon/about.png",
+        "selectedIconPath": "static/icon/aboutA.png",
+        "text": "关于"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}
