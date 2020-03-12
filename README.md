@@ -4,7 +4,7 @@
 color UI cover by "文晓港"
 
 
-# uniApp结合colorUI
+### uniApp结合colorUI
 下载源码解压，复制目录下的 /colorui 文件夹到你的项目根目录
 
 App.vue 引入关键Css main.css icon.css
@@ -16,7 +16,7 @@ App.vue 引入关键Css main.css icon.css
 `@import url("colorui/icon.css");`
 
 
-## 使用自定义导航栏
+##### 使用自定义导航栏
 
 自定义导航栏组件可以使开发者更灵活地进行个性化开发
 
