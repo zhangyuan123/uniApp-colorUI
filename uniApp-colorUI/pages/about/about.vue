@@ -12,17 +12,17 @@
     </view>
     <view class="padding flex text-center text-grey bg-white shadow-warp">
       <view class="flex flex-sub flex-direction solid-right">
-        <view class="text-xxl text-orange">1</view>
+        <view class="text-xxl text-orange">{{visitTotal}}</view>
         <view class="margin-top-sm">
           <text class="cuIcon-attentionfill"></text> View</view>
       </view>
       <view class="flex flex-sub flex-direction solid-right">
-        <view class="text-xxl text-blue">1</view>
+        <view class="text-xxl text-blue">{{starCount}}</view>
         <view class="margin-top-sm">
           <text class="cuIcon-favorfill"></text> Star</view>
       </view>
       <view class="flex flex-sub flex-direction">
-        <view class="text-xxl text-green">1</view>
+        <view class="text-xxl text-green">{{forksCount}}</view>
         <view class="margin-top-sm">
           <text class="cuIcon-fork"></text> Fork</view>
       </view>
@@ -73,7 +73,75 @@
 export default {
   data() {
     return {
+      starCount: 0,
+      forksCount: 0,
+      visitTotal: 0,
     }
+  },
+  mounted() {
+    console.log("onShow-success")
+    wx.showLoading({
+      title: '数据加载中',
+      mask: true,
+    })
+    this.numDH();
+    wx.hideLoading()
+  },
+  methods: {
+    numDH(i = 0) {
+      let that = this;
+      console.log('num', i)
+      let num = i || 0;
+      if (num < 20) {
+        setTimeout(() => {
+          that.starCount = num;
+          that.forksCount = num;
+          that.visitTotal = num;
+          num++
+          this.numDH(num);
+        }, 20)
+      } else {
+        that.starCount = 3000;
+        that.forksCount = 484;
+        that.visitTotal = 24000;
+      }
+    },
+    coutNum(e) {
+      if (e > 1000 && e < 10000) {
+        e = (e / 1000).toFixed(1) + 'k'
+      }
+      if (e > 10000) {
+        e = (e / 10000).toFixed(1) + 'W'
+      }
+      return e
+    },
+    CopyLink(e) {
+      wx.setClipboardData({
+        data: e.currentTarget.dataset.link,
+        success: res => {
+          wx.showToast({
+            title: '已复制',
+            duration: 1000,
+          })
+        }
+      })
+    },
+    showModal(e) {
+      this.setData({
+        modalName: e.currentTarget.dataset.target
+      })
+    },
+    hideModal(e) {
+      this.setData({
+        modalName: null
+      })
+    },
+    showQrcode() {
+      wx.previewImage({
+        urls: ['https://image.weilanwl.com/color2.0/zanCode.jpg'],
+        current: 'https://image.weilanwl.com/color2.0/zanCode.jpg' // 当前显示图片的http链接
+      })
+    },
   }
 }
 </script>
